@@ -96,7 +96,7 @@ export function ProfileScreen() {
                 My Profile
               </h1>
               <p style={{ fontSize: "0.8rem", color: "var(--color-subtitle)", fontStyle: "italic", fontWeight: 500 }}>
-                Shi' — Your journey so far
+                Your journey so far
               </p>
             </div>
           </div>
@@ -250,7 +250,7 @@ export function ProfileScreen() {
                 />
               </div>
               <p style={{ fontSize: "0.68rem", color: "var(--color-placeholder)", marginTop: "0.4rem", fontStyle: "italic" }}>
-                {studyPct}% of the study journey complete — Nizhóní!
+                {studyPct}% of the study journey complete
               </p>
             </div>
           </motion.div>
@@ -334,7 +334,7 @@ export function ProfileScreen() {
                       {notif.desc}
                     </p>
                     <p style={{ fontSize: "0.65rem", fontStyle: "italic", color: "var(--color-subtitle)", marginTop: "0.1rem" }}>
-                      {notif.navajo}
+                      {/* {notif.navajo} */}
                     </p>
                   </div>
                 </motion.div>

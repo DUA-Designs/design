@@ -150,7 +150,7 @@ function ResultsScreen({ score, total, xpEarned, onRestart, onHome }: {
         {pct >= 80 ? "Excellent!" : pct >= 60 ? "Well done!" : pct >= 40 ? "Good effort!" : "Keep learning!"}
       </h2>
       <p style={{ fontSize: "0.9rem", fontStyle: "italic", color: "var(--color-subtitle)", marginBottom: "2rem" }}>
-        {pct >= 80 ? "Yá'át'ééh — You're a heart health champion" : "Nizhóní — Every question teaches you something"}
+        {pct >= 80 ? "You're a heart health champion" : "Every question teaches you something"}
       </p>
 
       {/* Score */}
@@ -305,7 +305,7 @@ export function TriviaScreen() {
                   BP Trivia
                 </h1>
                 <p style={{ fontSize: "0.8rem", color: "var(--color-subtitle)", fontStyle: "italic", fontWeight: 500 }}>
-                  Béésh bąąh dahane' — Learn and earn
+                   Learn and earn
                 </p>
               </div>
             </div>
@@ -505,7 +505,7 @@ export function TriviaScreen() {
                         </div>
                         <div>
                           <p style={{ fontSize: "0.82rem", fontWeight: 700, color: selected === q.correct ? "#1a6b1a" : "#440154", marginBottom: "0.2rem" }}>
-                            {selected === q.correct ? "Correct! Yá'át'ééh! 🎉" : "Not quite — here's why:"}
+                            {selected === q.correct ? "Correct! 🎉" : "Not quite — here's why:"}
                           </p>
                           <p style={{ fontSize: "0.8rem", color: "var(--color-body)", lineHeight: 1.6 }}>
                             {q.explanation}

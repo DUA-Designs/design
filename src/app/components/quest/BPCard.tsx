@@ -68,9 +68,9 @@ export function BPCard({ systolic, diastolic, trend = "stable", timestamp }: BPC
             <p style={{ fontSize: "0.72rem", fontWeight: 700, color: "var(--color-title)", letterSpacing: "0.07em", textTransform: "uppercase" }}>
               Blood Pressure
             </p>
-            <p style={{ fontSize: "0.7rem", color: "var(--color-subtitle)", fontStyle: "italic" }}>
+            {/* <p style={{ fontSize: "0.7rem", color: "var(--color-subtitle)", fontStyle: "italic" }}>
               Díí dził yishłééh
-            </p>
+            </p> */}
           </div>
         </div>
         <div style={{
@@ -78,7 +78,8 @@ export function BPCard({ systolic, diastolic, trend = "stable", timestamp }: BPC
           background: s.bg, border: `1.5px solid ${s.border}`,
           fontSize: "0.72rem", fontWeight: 700, color: s.text,
         }}>
-          {s.label} · {s.navajo}
+          {s.label}
+          {/* · {s.navajo} */}
         </div>
       </div>
 

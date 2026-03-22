@@ -133,7 +133,7 @@ export function ExerciseLogScreen() {
                   Movement Log
                 </h1>
                 <p style={{ fontSize: "0.8rem", color: "var(--color-subtitle)", fontStyle: "italic", fontWeight: 500 }}>
-                  Na'ashch'ąąd — What did you do today?
+                  What did you do today?
                 </p>
               </div>
             </div>
@@ -247,7 +247,7 @@ export function ExerciseLogScreen() {
                       color: isSelected ? hexToRgba(activity.color, 0.80) : "var(--color-placeholder)",
                       transition: "color 0.2s",
                     }}>
-                      {activity.navajo}
+                      {/* {activity.navajo} */}
                     </span>
 
                     {/* Intensity pill */}
@@ -285,7 +285,7 @@ export function ExerciseLogScreen() {
             <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.05rem", fontWeight: 700, color: "var(--color-title)", marginBottom: "1.1rem" }}>
               How long?
               <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.78rem", fontWeight: 500, fontStyle: "italic", color: "var(--color-subtitle)", marginLeft: "0.5rem" }}>
-                Díí — minutes
+                minutes
               </span>
             </h2>
 
@@ -393,7 +393,7 @@ export function ExerciseLogScreen() {
                       Movement logged! +{xpEarned} XP 🎉
                     </p>
                     <p style={{ fontSize: "0.72rem", fontStyle: "italic", color: "#1a7571" }}>
-                      Nizhóní — Your heart thanks you.
+                      Your heart thanks you.
                     </p>
                   </div>
                 </motion.div>
@@ -470,7 +470,7 @@ export function ExerciseLogScreen() {
                 {note.note}
               </p>
               <p style={{ fontSize: "0.72rem", fontStyle: "italic", color: "var(--color-subtitle)" }}>
-                {note.navajo}
+                {/* {note.navajo} */}
               </p>
             </div>
           </motion.div>

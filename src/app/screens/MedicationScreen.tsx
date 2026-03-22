@@ -152,7 +152,7 @@ export function MedicationScreen() {
                 Medication
               </h1>
               <p style={{ fontSize: "0.8rem", color: "var(--color-subtitle)", fontStyle: "italic", fontWeight: 500 }}>
-                Azeeʼ — Daily check-in
+                Daily check-in
               </p>
             </div>
           </div>
@@ -230,9 +230,9 @@ export function MedicationScreen() {
               }}>
                 Did you take your medication today?
               </h2>
-              <p style={{ fontSize: "0.82rem", fontStyle: "italic", color: "var(--color-subtitle)" }}>
+              {/* <p style={{ fontSize: "0.82rem", fontStyle: "italic", color: "var(--color-subtitle)" }}>
                 Díí jį' azeeʼ ndíníltsoosí?
-              </p>
+              </p> */}
             </div>
 
             {/* Yes / No buttons */}
@@ -263,9 +263,9 @@ export function MedicationScreen() {
                     <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.1rem", fontWeight: 800, color: "#1a6b1a" }}>
                       Yes
                     </span>
-                    <span style={{ fontSize: "0.7rem", fontStyle: "italic", color: "#1a7571" }}>
+                    {/* <span style={{ fontSize: "0.7rem", fontStyle: "italic", color: "#1a7571" }}>
                       Aoo'
-                    </span>
+                    </span> */}
                   </motion.button>
 
                   {/* NO — same visual weight, no judgment */}
@@ -287,9 +287,9 @@ export function MedicationScreen() {
                     <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.1rem", fontWeight: 800, color: "var(--color-title)" }}>
                       Not yet
                     </span>
-                    <span style={{ fontSize: "0.7rem", fontStyle: "italic", color: "var(--color-subtitle)" }}>
+                    {/* <span style={{ fontSize: "0.7rem", fontStyle: "italic", color: "var(--color-subtitle)" }}>
                       Dooda
-                    </span>
+                    </span> */}
                   </motion.button>
                 </motion.div>
               )}
@@ -317,13 +317,13 @@ export function MedicationScreen() {
                     🎉
                   </motion.div>
                   <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.3rem", fontWeight: 700, color: "#1a6b1a", marginBottom: "0.25rem" }}>
-                    Yá'át'ééh!
+                    Well done!
                   </h3>
                   <p style={{ fontSize: "0.88rem", color: "#1a7571", marginBottom: "0.5rem", fontWeight: 500 }}>
                     Streak extended to {newStreak} days — keep protecting it!
                   </p>
                   <p style={{ fontSize: "0.75rem", fontStyle: "italic", color: "var(--color-subtitle)" }}>
-                    Nizhóní — You're doing beautifully.
+                    You're doing beautifully.
                   </p>
                 </motion.div>
               )}
@@ -351,7 +351,7 @@ export function MedicationScreen() {
                     {tip.tip}
                   </p>
                   <p style={{ fontSize: "0.72rem", fontStyle: "italic", color: "var(--color-subtitle)" }}>
-                    {tip.navajo}
+                    {/* {tip.navajo} */}
                   </p>
                 </motion.div>
               )}

@@ -102,14 +102,15 @@ export function SplashScreen() {
             <h1 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 900, fontSize: "clamp(2rem, 7vw, 2.8rem)", color: "#3b528b", letterSpacing: "-0.02em", lineHeight: 1.1, marginBottom: "0.2rem" }}>
               Cardio Care Quest
             </h1>
+             <div style={{ width: 40, height: 2, borderRadius: 999, background: "linear-gradient(to right, #5ec962, #fde725)", margin: "0.5rem auto" }} />
           </motion.div>
 
           {/* Navajo greeting */}
           <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.1, duration: 0.5 }} style={{ textAlign: "center", marginBottom: "3rem" }}>
-            <p style={{ fontFamily: "'Playfair Display', serif", fontStyle: "italic", fontSize: "clamp(1.3rem, 4vw, 1.6rem)", fontWeight: 700, color: "#1a7571", marginBottom: "0.35rem", letterSpacing: "0.01em" }}>
+            {/* <p style={{ fontFamily: "'Playfair Display', serif", fontStyle: "italic", fontSize: "clamp(1.3rem, 4vw, 1.6rem)", fontWeight: 700, color: "#1a7571", marginBottom: "0.35rem", letterSpacing: "0.01em" }}>
               Yá'át'ééh
-            </p>
-            <div style={{ width: 40, height: 2, borderRadius: 999, background: "linear-gradient(to right, #5ec962, #fde725)", margin: "0.5rem auto" }} />
+            </p> */}
+            {/* <div style={{ width: 40, height: 2, borderRadius: 999, background: "linear-gradient(to right, #5ec962, #fde725)", margin: "0.5rem auto" }} /> */}
             <p style={{ fontSize: "1rem", fontWeight: 500, color: "#6b7a9f", letterSpacing: "0.04em" }}>
               Welcome to Your Health Journey
             </p>

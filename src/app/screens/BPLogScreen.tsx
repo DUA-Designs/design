@@ -108,7 +108,7 @@ export function BPLogScreen() {
                 BP Journal
               </h1>
               <p style={{ fontSize: "0.8rem", color: "var(--color-subtitle)", fontStyle: "italic", fontWeight: 500 }}>
-                Jáádí bee haz'ą́ — Today's entry
+                 Today's entry
               </p>
             </div>
           </div>
@@ -240,9 +240,9 @@ export function BPLogScreen() {
             <div style={{ marginBottom: "0.5rem" }}>
               <p style={{ fontSize: "0.78rem", fontWeight: 700, color: "var(--color-title)", marginBottom: "0.75rem", letterSpacing: "0.02em" }}>
                 How are you feeling?
-                <span style={{ fontStyle: "italic", fontWeight: 500, color: "var(--color-subtitle)", marginLeft: "0.4rem" }}>
+                {/* <span style={{ fontStyle: "italic", fontWeight: 500, color: "var(--color-subtitle)", marginLeft: "0.4rem" }}>
                   Háálá lá nízin?
-                </span>
+                </span> */}
               </p>
               <div style={{ display: "flex", justifyContent: "space-between", gap: "0.4rem" }}>
                 {MOODS.map((m) => {
@@ -306,10 +306,10 @@ export function BPLogScreen() {
                   <CheckCircle2 size={22} style={{ color: "#5ec962" }} />
                   <div style={{ textAlign: "center" }}>
                     <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1rem", fontWeight: 800, color: "#1a6b1a" }}>
-                      Saved! Yá'át'ééh! 🎉
+                      Saved! 🎉
                     </p>
                     <p style={{ fontSize: "0.75rem", fontStyle: "italic", color: "#1a7571" }}>
-                      Nídiilnish — Well done, keep it up!
+                     Well done, keep it up!
                     </p>
                   </div>
                 </motion.div>
@@ -373,9 +373,9 @@ export function BPLogScreen() {
               <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: "1rem", fontWeight: 700, color: "var(--color-title)" }}>
                 7-Day History
               </h3>
-              <span style={{ fontSize: "0.7rem", fontWeight: 600, color: "var(--color-subtitle)", fontStyle: "italic" }}>
+              {/* <span style={{ fontSize: "0.7rem", fontWeight: 600, color: "var(--color-subtitle)", fontStyle: "italic" }}>
                 Naakits'áadah yiskąąjį'
-              </span>
+              </span> */}
             </div>
 
             {/* Bar chart — Viridis colored by BP status */}

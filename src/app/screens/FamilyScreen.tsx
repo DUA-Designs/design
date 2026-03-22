@@ -119,7 +119,7 @@ export function FamilyScreen() {
                 Family Circle
               </h1>
               <p style={{ fontSize: "0.8rem", color: "var(--color-subtitle)", fontStyle: "italic", fontWeight: 500 }}>
-                Hakʼéí — Your people, your strength
+                Your people, your strength
               </p>
             </div>
           </div>
@@ -319,7 +319,7 @@ export function FamilyScreen() {
                   {FAMILY_QUEST.title}
                 </h3>
                 <p style={{ fontSize: "0.72rem", fontStyle: "italic", color: "var(--color-subtitle)" }}>
-                  {FAMILY_QUEST.titleNavajo}
+                  {/* {FAMILY_QUEST.titleNavajo} */}
                 </p>
               </div>
             </div>
@@ -383,7 +383,7 @@ export function FamilyScreen() {
                   How we're all doing
                 </h3>
                 <p style={{ fontSize: "0.7rem", fontStyle: "italic", color: "var(--color-subtitle)" }}>
-                  Hózhó — together in balance
+                   together in balance
                 </p>
               </div>
               <div style={{
@@ -474,9 +474,9 @@ export function FamilyScreen() {
               <p style={{ fontSize: "0.78rem", color: "var(--color-body)", lineHeight: 1.6, fontStyle: "italic" }}>
                 Every point earned by one is a step forward for all. Your family has come a long way together.
               </p>
-              <p style={{ fontSize: "0.7rem", color: "var(--color-subtitle)", marginTop: "0.3rem", fontStyle: "italic" }}>
+              {/* <p style={{ fontSize: "0.7rem", color: "var(--color-subtitle)", marginTop: "0.3rem", fontStyle: "italic" }}>
                 Hózhó nahasdlíí' — K'é dóó nizhóní.
-              </p>
+              </p> */}
             </div>
           </motion.div>
 

@@ -89,7 +89,7 @@ export function HomeScreen() {
                 fontWeight: 900, color: "var(--color-title)",
                 marginBottom: "0.18rem", lineHeight: 1.15,
               }}>
-                Yá'át'ééh, Sarah!
+                Hello, Sarah!
               </h1>
               <p style={{ fontSize: "0.85rem", fontWeight: 500, color: "var(--color-subtitle)", fontStyle: "italic" }}>
                 Ready for today's quest?
@@ -114,11 +114,11 @@ export function HomeScreen() {
               <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.05rem", fontWeight: 700, color: "var(--color-title)" }}>
                 Today's Quest
               </h2>
-              <span style={{ fontSize: "0.7rem", fontWeight: 600, color: "var(--color-subtitle)", fontStyle: "italic" }}>Nídiilnish</span>
+              {/* <span style={{ fontSize: "0.7rem", fontWeight: 600, color: "var(--color-subtitle)", fontStyle: "italic" }}>Nídiilnish</span> */}
             </div>
             <DailyTaskCard
               task="Log your blood pressure"
-              taskNavajo="Nídiilnish jáádí bee haz'ą́"
+              taskNavajo=""
               completed={taskCompleted}
               onToggle={handleTaskToggle}
             />
@@ -134,7 +134,7 @@ export function HomeScreen() {
                 onClick={() => navigate("/family")}
                 style={{ display: "flex", alignItems: "center", gap: "0.15rem", fontSize: "0.7rem", fontWeight: 600, color: "var(--color-subtitle)", fontStyle: "italic", background: "none", border: "none", cursor: "pointer" }}
               >
-                Hakʼéí <ChevronRight size={12} />
+                View All <ChevronRight size={12} />
               </button>
             </div>
 
@@ -179,7 +179,7 @@ export function HomeScreen() {
               <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.05rem", fontWeight: 700, color: "var(--color-title)" }}>
                 Health Pillars
               </h2>
-              <span style={{ fontSize: "0.7rem", fontWeight: 600, color: "var(--color-subtitle)", fontStyle: "italic" }}>Hózhó Nahasdlíí'</span>
+              {/* <span style={{ fontSize: "0.7rem", fontWeight: 600, color: "var(--color-subtitle)", fontStyle: "italic" }}>Hózhó Nahasdlíí'</span> */}
             </div>
 
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.8rem" }}>
@@ -193,7 +193,7 @@ export function HomeScreen() {
                   <HealthPillarTile
                     icon={pillar.icon}
                     title={pillar.title}
-                    titleNavajo={pillar.titleNavajo}
+                    titleNavajo={''}
                     progress={pillar.progress}
                     color={pillar.color}
                     level={pillar.level}
@@ -213,7 +213,7 @@ export function HomeScreen() {
         isOpen={showCelebration}
         onClose={() => setShowCelebration(false)}
         message="Great Job!"
-        navajoMessage="Yéego!"
+        navajoMessage=""
         xpGained={50}
       />
     </div>

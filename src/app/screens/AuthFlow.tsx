@@ -226,7 +226,7 @@ const STEPS: Step[] = [
       {
         fieldKey: "additionalNotes",
         inputType: "text",
-        title: "Sharing more / Nahane'",
+        title: "Sharing more",
         placeholder: "Your answer…",
       },
     ],
@@ -684,8 +684,8 @@ function LoginPage({ onLogin, onNavigateToSignup }: LoginPageProps) {
           Cardio Care Quest
         </h1>
         <p style={{ fontSize: "1rem", fontWeight: 700, fontStyle: "italic", color: "var(--color-subtitle)", marginBottom: "2.25rem", letterSpacing: "0.02em" }}>
-          <em>Biih ííyá</em>
-          <span aria-hidden="true" style={{ opacity: 0.35, margin: "0 0.45rem", fontStyle: "normal" }}>•</span>
+          {/* <em>Biih ííyá</em>
+          <span aria-hidden="true" style={{ opacity: 0.35, margin: "0 0.45rem", fontStyle: "normal" }}>•</span> */}
           Login
         </p>
 

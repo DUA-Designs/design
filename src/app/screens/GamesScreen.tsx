@@ -187,7 +187,7 @@ export function GamesScreen() {
                   Quest Games
                 </h1>
                 <p style={{ fontSize: "0.8rem", color: "var(--color-subtitle)", fontStyle: "italic", fontWeight: 500 }}>
-                  Naanish — Play your way to health
+                  Play your way to health
                 </p>
               </div>
             </div>
@@ -325,7 +325,7 @@ export function GamesScreen() {
                           fontSize: "0.68rem", fontStyle: "italic",
                           color: "var(--color-subtitle)", marginBottom: "0.4rem",
                         }}>
-                          {game.titleNavajo}
+                          {/* {game.titleNavajo} */}
                         </p>
                         <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
                           <StarRating stars={game.stars} max={game.maxStars} color={game.color} />
@@ -446,7 +446,7 @@ export function GamesScreen() {
             <p style={{ fontSize: "0.78rem", color: "var(--color-placeholder)", lineHeight: 1.6, fontStyle: "italic" }}>
               Every game you play is a step toward better heart health.
               <br />
-              <span style={{ color: "var(--color-subtitle)" }}>Hózhó nahasdlíí' — balance is restored.</span>
+              {/* <span style={{ color: "var(--color-subtitle)" }}>Hózhó nahasdlíí' — balance is restored.</span> */}
             </p>
           </motion.div>
 

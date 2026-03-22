@@ -115,7 +115,7 @@ function MealCard({
               {slot.label}
             </h3>
             <p style={{ fontSize: "0.68rem", fontStyle: "italic", color: "var(--color-subtitle)" }}>
-              {slot.navajo}
+              {/* {slot.navajo} */}
             </p>
           </div>
         </div>
@@ -314,7 +314,7 @@ export function DietLogScreen() {
                   Food Journal
                 </h1>
                 <p style={{ fontSize: "0.8rem", color: "var(--color-subtitle)", fontStyle: "italic", fontWeight: 500 }}>
-                  Ch'iyáán — Today's meals
+                  Today's meals
                 </p>
               </div>
             </div>
@@ -359,9 +359,9 @@ export function DietLogScreen() {
             <span style={{ fontSize: "1.1rem", flexShrink: 0 }}>🌱</span>
             <p style={{ fontSize: "0.8rem", color: "var(--color-body)", lineHeight: 1.6, fontStyle: "italic" }}>
               Log what you ate today — no perfect meals needed. Every entry is an act of care for yourself.
-              <span style={{ color: "var(--color-subtitle)", marginLeft: "0.3rem" }}>
+              {/* <span style={{ color: "var(--color-subtitle)", marginLeft: "0.3rem" }}>
                 Bee hózhó nahasdlíí'.
-              </span>
+              </span> */}
             </p>
           </motion.div>
 
@@ -408,7 +408,7 @@ export function DietLogScreen() {
                   <CheckCircle2 size={20} style={{ color: "#5ec962" }} />
                   <div>
                     <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.95rem", fontWeight: 800, color: "#1a6b1a" }}>
-                      Journal saved! Nizhóní! 🌿
+                      Journal saved! 🌿
                     </p>
                     <p style={{ fontSize: "0.72rem", fontStyle: "italic", color: "#1a7571" }}>
                       Awareness is the first step to balance.
@@ -488,7 +488,7 @@ export function DietLogScreen() {
                 {tip.tip}
               </p>
               <p style={{ fontSize: "0.72rem", fontStyle: "italic", color: "var(--color-subtitle)" }}>
-                {tip.navajo}
+                {/* {tip.navajo} */}
               </p>
             </div>
           </motion.div>
