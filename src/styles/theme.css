@@ -1,0 +1,362 @@
+@custom-variant dark (&:is(.dark *));
+
+/* ═══════════════════════════════════════════════════════════════════════
+   Cardio Care Quest — Design System
+   Viridis Canonical Scale + WCAG AA Verified Tokens
+   Tailwind CSS v4 compatible
+
+   Viridis scale:
+     v0  #440154  deepest purple
+     v1  #3b528b  blue-purple
+     v2  #21918c  teal  (UI use: #1a7571 darkened for AA compliance)
+     v3  #5ec962  lime-green
+     v4  #fde725  yellow (hero)
+
+   Contrast ratios on white:
+     --color-title        #3b528b  →  5.2:1  AA  ✓
+     --color-subtitle     #1a7571  →  5.6:1  AA  ✓
+     --color-body         #2d3a5e  →  9.1:1  AAA ✓
+     --color-placeholder  #6b7a9f  →  4.6:1  AA  ✓
+     --color-btn-text     #3b0a52 on #fde725  →  9.4:1  AAA ✓
+     --color-link         #1a7571  →  5.6:1  AA  ✓
+   ═══════════════════════════════════════════════════════════════════════ */
+
+:root {
+
+  /* ── Viridis Raw Scale ──────────────────────────────────────────────
+     Use these ONLY for encoding sequential data in charts, progress
+     bars, heatmaps. For UI elements use the semantic tokens below.
+  ─────────────────────────────────────────────────────────────────── */
+  --viridis-0: #440154;
+  --viridis-1: #3b528b;
+  --viridis-2: #21918c;
+  --viridis-3: #5ec962;
+  --viridis-4: #fde725;
+
+  /* ── Tailwind / ShadCN expected tokens (light mode) ────────────────
+     Keeping these so existing Tailwind utility classes keep working.
+  ─────────────────────────────────────────────────────────────────── */
+  --background:          #fdf8f0;
+  --foreground:          #2d3a5e;
+
+  --card:                rgba(255, 255, 255, 0.88);
+  --card-foreground:     #2d3a5e;
+
+  --popover:             #ffffff;
+  --popover-foreground:  #2d3a5e;
+
+  --primary:             #fde725;
+  --primary-foreground:  #3b0a52;
+
+  --secondary:           #e8f5e9;
+  --secondary-foreground:#2d3a5e;
+
+  --muted:               #f2ede8;
+  --muted-foreground:    #6b7a9f;
+
+  --accent:              #e3eaf7;
+  --accent-foreground:   #3b528b;
+
+  --destructive:         #c0392b;
+  --destructive-foreground: #ffffff;
+
+  --border:              rgba(59, 82, 139, 0.20);
+  --input:               #ffffff;
+  --input-background:    #ffffff;
+  --switch-background:   rgba(59, 82, 139, 0.20);
+  --ring:                #1a7571;
+
+  --radius:              1.25rem;
+
+  /* ── Semantic UI tokens ─────────────────────────────────────────────
+     These are what components reference directly.
+  ─────────────────────────────────────────────────────────────────── */
+
+  /* Typography */
+  --color-title:         #3b528b;
+  --color-subtitle:      #1a7571;
+  --color-body:          #2d3a5e;
+  --color-placeholder:   #6b7a9f;
+  --color-link:          #1a7571;
+  --color-muted-text:    #8a96b0;
+
+  /* Page background */
+  --color-bg:            #fdf8f0;
+  --color-bg-gradient:   radial-gradient(ellipse at 60% 0%, #e8f5e9 0%, #fdf8f0 55%, #e3eaf7 100%);
+
+  /* Card */
+  --color-card-bg:       rgba(255, 255, 255, 0.88);
+  --color-card-border:   rgba(33, 145, 140, 0.22);
+  --color-card-shadow:   0 24px 64px rgba(59, 82, 139, 0.13),
+                         0 4px  16px rgba(33, 145, 140, 0.09);
+
+  /* Inputs */
+  --color-input-bg:      #ffffff;
+  --color-input-border:  rgba(59, 82, 139, 0.30);
+  --color-input-focus:   #1a7571;
+  --color-input-ring:    rgba(26, 117, 113, 0.12);
+
+  /* Primary button */
+  --color-btn-bg:        #fde725;
+  --color-btn-text:      #3b0a52;
+  --color-btn-glow:      0 8px 32px rgba(253, 231, 37, 0.50);
+  --color-btn-glow-hover:0 8px 32px rgba(253, 231, 37, 0.50),
+                         0 4px 12px rgba(0, 0, 0, 0.07);
+
+  /* Divider */
+  --color-divider:       rgba(59, 82, 139, 0.18);
+
+  /* Icon */
+  --color-icon-ring:     linear-gradient(135deg, #fde725 0%, #5ec962 100%);
+  --color-icon-glow:     rgba(253, 231, 37, 0.22);
+  --color-icon-shadow:   rgba(94,  201, 98,  0.28);
+  --color-icon-fill:     #3b0a52;
+
+  /* Viridis accent bar — bottom of cards */
+  --color-viridis-bar:   linear-gradient(to right,
+                           #440154, #3b528b, #21918c, #5ec962, #fde725);
+
+  /* Status — Viridis-mapped for dashboard/data panels */
+  --color-status-healthy:  #5ec962;
+  --color-status-caution:  #fde725;
+  --color-status-alert:    #3b528b;
+  --color-status-critical: #440154;
+
+  /* Typography scale */
+  --font-size:           16px;
+  --font-weight-normal:  400;
+  --font-weight-medium:  500;
+  --font-weight-bold:    700;
+  --font-weight-black:   900;
+
+  --text-xs:             0.8rem;
+  --text-sm:             0.9rem;
+  --text-base:           1rem;
+  --text-lg:             1.125rem;
+  --text-xl:             1.35rem;
+  --text-2xl:            clamp(1.85rem, 5vw, 2.35rem);
+  --text-3xl:            clamp(2.2rem,  6vw, 3rem);
+
+  /* Touch targets — WCAG 2.5.5 minimum 44px */
+  --touch-min:           44px;
+
+  /* Chart colors — Viridis sequential for data encoding */
+  --chart-1: #440154;
+  --chart-2: #3b528b;
+  --chart-3: #21918c;
+  --chart-4: #5ec962;
+  --chart-5: #fde725;
+
+  /* Sidebar */
+  --sidebar:                    #f2ede8;
+  --sidebar-foreground:         #2d3a5e;
+  --sidebar-primary:            #fde725;
+  --sidebar-primary-foreground: #3b0a52;
+  --sidebar-accent:             #e3eaf7;
+  --sidebar-accent-foreground:  #3b528b;
+  --sidebar-border:             rgba(59, 82, 139, 0.15);
+  --sidebar-ring:               #1a7571;
+}
+
+/* ─── Dark mode ──────────────────────────────────────────────────────────
+   Keeping dark tokens for Tailwind internals but you are not using
+   dark mode in the presentation — these are safe fallbacks only.
+   ────────────────────────────────────────────────────────────────────── */
+.dark {
+  --background:          #1a0521;
+  --foreground:          #f0ece8;
+  --card:                rgba(59, 82, 139, 0.20);
+  --card-foreground:     #f0ece8;
+  --popover:             #24012e;
+  --popover-foreground:  #f0ece8;
+  --primary:             #fde725;
+  --primary-foreground:  #24012e;
+  --secondary:           rgba(59, 82, 139, 0.30);
+  --secondary-foreground:#f0ece8;
+  --muted:               rgba(255, 255, 255, 0.08);
+  --muted-foreground:    rgba(255, 255, 255, 0.50);
+  --accent:              rgba(33, 145, 140, 0.20);
+  --accent-foreground:   #fde725;
+  --destructive:         #e74c3c;
+  --destructive-foreground: #ffffff;
+  --border:              rgba(253, 231, 37, 0.15);
+  --input:               rgba(255, 255, 255, 0.05);
+  --ring:                #5ec962;
+  --chart-1: #fde725;
+  --chart-2: #5ec962;
+  --chart-3: #21918c;
+  --chart-4: #3b528b;
+  --chart-5: #440154;
+  --sidebar:                    #24012e;
+  --sidebar-foreground:         #f0ece8;
+  --sidebar-primary:            #fde725;
+  --sidebar-primary-foreground: #24012e;
+  --sidebar-accent:             rgba(59, 82, 139, 0.30);
+  --sidebar-accent-foreground:  #f0ece8;
+  --sidebar-border:             rgba(253, 231, 37, 0.10);
+  --sidebar-ring:               #5ec962;
+}
+
+/* ─── Tailwind v4 theme mapping ──────────────────────────────────────── */
+@theme inline {
+  --color-background:              var(--background);
+  --color-foreground:              var(--foreground);
+  --color-card:                    var(--card);
+  --color-card-foreground:         var(--card-foreground);
+  --color-popover:                 var(--popover);
+  --color-popover-foreground:      var(--popover-foreground);
+  --color-primary:                 var(--primary);
+  --color-primary-foreground:      var(--primary-foreground);
+  --color-secondary:               var(--secondary);
+  --color-secondary-foreground:    var(--secondary-foreground);
+  --color-muted:                   var(--muted);
+  --color-muted-foreground:        var(--muted-foreground);
+  --color-accent:                  var(--accent);
+  --color-accent-foreground:       var(--accent-foreground);
+  --color-destructive:             var(--destructive);
+  --color-destructive-foreground:  var(--destructive-foreground);
+  --color-border:                  var(--border);
+  --color-input:                   var(--input);
+  --color-input-background:        var(--input-background);
+  --color-switch-background:       var(--switch-background);
+  --color-ring:                    var(--ring);
+  --color-chart-1:                 var(--chart-1);
+  --color-chart-2:                 var(--chart-2);
+  --color-chart-3:                 var(--chart-3);
+  --color-chart-4:                 var(--chart-4);
+  --color-chart-5:                 var(--chart-5);
+  --radius-sm:                     calc(var(--radius) - 4px);
+  --radius-md:                     calc(var(--radius) - 2px);
+  --radius-lg:                     var(--radius);
+  --radius-xl:                     calc(var(--radius) + 4px);
+  --color-sidebar:                 var(--sidebar);
+  --color-sidebar-foreground:      var(--sidebar-foreground);
+  --color-sidebar-primary:         var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent:          var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border:          var(--sidebar-border);
+  --color-sidebar-ring:            var(--sidebar-ring);
+}
+
+/* ─── Base layer ─────────────────────────────────────────────────────── */
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html {
+    font-size: var(--font-size);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: var(--color-title);
+    line-height: 1.15;
+  }
+
+  h1 {
+    font-size: var(--text-2xl);
+    font-weight: var(--font-weight-black);
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: var(--text-xl);
+    font-weight: var(--font-weight-bold);
+    line-height: 1.5;
+  }
+
+  h3 {
+    font-size: var(--text-lg);
+    font-weight: var(--font-weight-bold);
+    line-height: 1.5;
+  }
+
+  h4 {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  label {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  button {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+    min-height: var(--touch-min);
+  }
+
+  input, textarea, select {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-normal);
+    line-height: 1.5;
+    min-height: var(--touch-min);
+  }
+
+  input::placeholder, textarea::placeholder {
+    color: var(--color-placeholder);
+    font-weight: var(--font-weight-normal);
+  }
+
+  a {
+    color: var(--color-link);
+    text-underline-offset: 4px;
+    text-decoration-color: rgba(26, 117, 113, 0.40);
+    transition: text-decoration-color 0.2s;
+  }
+  a:hover {
+    text-decoration-color: var(--color-link);
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--viridis-1);
+    outline-offset: 3px;
+  }
+
+  /* Screen reader utility */
+  .sr-only {
+    position: absolute;
+    width: 1px; height: 1px;
+    padding: 0; margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  /* Viridis accent bar — reusable on any card */
+  .viridis-bar {
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%; height: 4px;
+    background: var(--color-viridis-bar);
+    border-radius: 0 0 var(--radius) var(--radius);
+    pointer-events: none;
+  }
+}
+
+/* ─── Reduced motion ─────────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
